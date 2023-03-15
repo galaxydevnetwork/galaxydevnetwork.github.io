@@ -1,0 +1,253 @@
+html, body {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    font-family: Gopher, sans-serif;
+}
+:root {
+    --rotate: 124deg;
+}
+/* Fonts */
+@font-face {
+    font-family: Gopher;
+    src: url(/fonts/Gopher-Regular.woff);
+}
+@font-face {
+    font-family: Gopher-Medium;
+    src: url(/fonts/Gopher-Medium.woff);
+}
+@font-face {
+    font-family: Gopher-Black;
+    src: url(/fonts/Gopher-Black.woff);
+    font-weight: bolder;
+}
+@font-face {
+    font-family: Gopher-Bold;
+    src: url(/fonts/Gopher-Bold.woff);
+    font-weight: bold;
+}
+/* Announcement */
+.galaxydevnetwork-announcements {
+    background-color: #42df16aa;
+    display: flex;
+    overflow: hidden;
+    gap: 1rem;
+    position: relative;
+    user-select: none;
+    border-bottom: 2px solid black;
+    border-top: 2px solid black;
+}
+.galaxydevnetwork-announcements-text {
+    gap: 1rem;
+    flex-basis: 0;
+    font-size: 40px;
+    display: flex;
+    min-width: 100%;
+    justify-content: space-around;
+    animation: ScrollingEffect 10s linear infinite;
+}
+
+/* Home */
+.galaxydevnetwork-home-logo {
+    height: 160px;
+    text-align: center;
+    border-radius: 5px;
+    font-family: Gopher-Black, Roboto, Arial, sans-serif;
+}
+.galaxydevnetwork-home h1 {
+    font-family: Gopher-Black, Roboto, Arial, sans-serif;
+    font-size: 40px;
+    background: #000000;
+    background: -moz-linear-gradient(124deg, rgba(0,0,0,1) 0%, rgba(255,255,255,1) 73%);
+    background: -webkit-linear-gradient(124deg, rgba(0,0,0,1) 0%, rgba(255,255,255,1) 73%);
+    background: linear-gradient(124deg, rgba(0,0,0,1) 0%, rgba(255,255,255,1) 73%);
+    -webkit-background-clip: text;
+    -webkit-text-stroke: #000000;
+    text-shadow: 1px 0 #000, 1px 0 #fff, 0 0px #fff, 0 1px #fff,
+               0px 1px #fff, 0 1px #fff, 0px 0px #fff, -1px 1px #fff;
+    background-clip: text;
+    color: transparent;
+}
+.galaxydevnetwork-home p {
+    font-family: Gopher-Medium;
+    color: white;
+}
+.galaxydevnetwork-home-nav-center-logo {
+    text-align: center;
+}
+
+.galaxydevnetwork-home {
+    width: 100%;
+    padding-top: 1rem;
+    padding-bottom: 10rem;
+    background: rgb(26,0,36);
+    background: -moz-linear-gradient(124deg, rgba(26,0,36,1) 0%, rgba(88,9,121,1) 55%, rgba(171,0,255,1) 100%);
+    background: -webkit-linear-gradient(124deg, rgba(26,0,36,1) 0%, rgba(88,9,121,1) 55%, rgba(171,0,255,1) 100%);
+    background: linear-gradient(124deg, rgba(26,0,36,1) 0%, rgba(88,9,121,1) 55%, rgba(171,0,255,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#1a0024",endColorstr="#ab00ff",GradientType=1);
+    border-bottom: 2px solid black;
+}
+@keyframes ScrollingEffect {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(calc(-100% - 1rem));
+        
+    }
+}
+/* Tools */
+.galaxydevnetwork-tools {
+    font-family: Gopher-Bold;
+    width: 100%;
+    border-top: 2px solid #000000;
+    border-bottom: 2px solid #000000;
+    padding-top: 10rem;
+    padding-bottom: 10rem;
+
+}
+.galaxydevnetwork-tools h1 {
+    text-align: center;
+}
+/* Footer */
+footer {
+    border-top-left-radius: 7.5rem;
+    border:#000 solid 2px;
+    width: 100%;
+}
+footer .title {
+    font-family: Gopher-Bold, Roboto, Arial, sans-serif;
+}
+footer .row {
+    width: 85%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+footer .col {
+    flex-basis: 25%;
+    padding: 10px;
+}
+footer .col h3 {
+    width: fit-content;
+    margin-bottom: 40px;
+    position: relative;
+    font-family: Gopher-Bold, Roboto, Arial, sans-serif;
+}
+.galaxydevnetwork-tools {
+    background: linear-gradient(124deg, #d6d8a6, #b35d5d)
+}
+.logo_slider {
+    overflow-x: hidden;
+}
+.overflow {
+    display: flex;
+    padding: .5rem 1rem;
+    overflow: hidden;
+}
+.logo_wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    animation: LogoLoop 30s linear infinite;
+}
+
+.logo_item {
+    background-color: white;
+    margin-left: 1rem;
+    padding: 1rem;
+    aspect-ratio: 30/9;
+    display: grid;
+    place-items: center;
+    border-radius: 10px;
+
+}
+.container {
+    background-color: white;
+    width: auto;
+    width: 100%;
+    text-align: center;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    margin-left: 0.5;
+}
+
+.galaxydevnetwork-events h3 {
+    text-align: center;
+    font-family: Gopher-Black;
+    font-size: 40px;
+}
+.galaxydevnetwork-events {
+    border-bottom: 2px solid black;
+}
+.tab h3 {
+    font-size: 20px;
+}
+.tab {
+    padding-left: 1rem;
+}
+.event {
+    padding-left: 1rem;
+    padding-bottom: 2rem;
+}
+.event h4 {
+    font-family: Gopher-Medium;
+    font-size: 20px;
+}
+.galaxydevnetwork-faq {
+    padding-bottom: 1rem;
+}
+.event p {
+    padding-bottom: 1rem;
+}
+.galaxydevnetwork-events-featured h1 {
+    text-align: center;
+}
+.reverse {
+    animation-direction: reverse;
+}
+.logo_item img {
+    width: 12rem;
+    margin-inline: 2rem;
+}
+.button {
+    background: #355ca9;
+    padding: 1rem;
+    color: white;
+    text-decoration: none;
+    border-radius: 15px;
+}
+@media only screen and (max-width: 650px) {
+    .galaxydevnetwork-home-logo {
+        height: 63px;
+    }
+    .galaxydevnetwork-announcements-text {
+        font-size: 20px;
+    }
+    .galaxydevnetwork-home h1 {
+        font-size: 35px;
+    }
+    
+}
+@media only screen and (max-width: 350px) {
+    .galaxydevnetwork-home-logo {
+        height: 63px;
+    }
+    .galaxydevnetwork-announcements-text {
+        font-size: 10px;
+    }
+    .galaxydevnetwork-home h1 {
+        font-size: 20px;
+    }
+    
+}
+@keyframes LogoLoop {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(-100%);
+    }
+}
